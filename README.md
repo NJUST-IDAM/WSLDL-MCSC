@@ -9,6 +9,7 @@ Publication
 --
 Code accompanying the paper **Weakly supervised label distribution learning based on transductive matrix completion with sample correlations**. PRLetters 2019.
 https://www.sciencedirect.com/science/article/pii/S0167865519301795
+
 DataSet
 --
 The group of PALM provides some LDL data sets. http://palm.seu.edu.cn/xgeng/LDL/index.htm
