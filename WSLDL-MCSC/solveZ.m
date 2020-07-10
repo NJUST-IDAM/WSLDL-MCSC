@@ -23,7 +23,9 @@ Il=ones(size(ZY,2),1);
 In=ones(size(ZY,1),1);
 
 GX=ZX-[finalX,b];
-GY=2*gama*(ZY-finalY).*finalW+ZY*Il-In+lambda*(L+L')*ZY;
+T=ZY*Il-In;
+GY=2*gama*(ZY-finalY).*finalW+repmat(T,1*l)+lambda*(L+L')*ZY;
+%GY=2*gama*(ZY-finalY).*finalW+ZY*Il-In+lambda*(L+L')*ZY;
 GZ=admmrho*(Z-S)+Gamma;
 grad=GZ+[GX,GY];
 
